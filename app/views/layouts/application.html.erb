@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>L12019</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="/">L12019</a>
+    
+    <ul class="navbar-nav ml-auto">
+
+      
+        <%= link_to root_path, class:'nav-link' do%>
+        <i class="fas fa-sign-in-alt"></i>
+
+        Login
+        <%end%>
+       
+       <%= link_to root_path, class:'nav-link' do%>
+         <i class="fas fa-sign-out-alt"></i>Log uot
+        <%end%>
+
+         <%= link_to root_path, class:'nav-link' do%>
+         <i class="fas fa-sign-out-alt"></i>L12019
+        <%end%>
+   </ul>
+</nav>
+
+
+    <%= yield %>
+  </body>
+</html>
